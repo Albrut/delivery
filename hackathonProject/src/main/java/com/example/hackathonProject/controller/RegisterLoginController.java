@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RequestMapping("/auth")
 @RestController
-public class RestAPIController {
+public class RegisterLoginController {
 
     @GetMapping("/")
     public String mainPage() {
