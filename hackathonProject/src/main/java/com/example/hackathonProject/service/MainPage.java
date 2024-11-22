@@ -17,4 +17,15 @@ public class MainPage {
         this.userModel = userModel;
         this. deliverModel = deliverModel;
     }
+    
+    public Object getModelByRoleAndId(String role){
+        switch (role) {
+            case "USER":
+                return userModel.s
+                break;
+        
+            default:
+                break;
+        }
+    }
 }

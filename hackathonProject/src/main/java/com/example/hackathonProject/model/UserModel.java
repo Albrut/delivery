@@ -22,5 +22,4 @@ public class UserModel {
     @OneToMany(mappedBy = "user")
     private List<OrderModel> orders;
 
-
 }
