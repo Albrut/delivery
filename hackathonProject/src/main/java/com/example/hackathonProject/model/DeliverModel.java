@@ -4,6 +4,7 @@ package com.example.hackathonProject.model;
 
 import com.example.hackathonProject.model.constants.ConstantsOfTransport;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -19,7 +20,9 @@ public class DeliverModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(unique = true)
     private String deliverLogin;
+    
     private String deliverPassword;
 
     @Enumerated(EnumType.STRING)

@@ -1,5 +1,7 @@
 package com.example.hackathonProject.model;
 
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 import com.example.hackathonProject.model.constants.SizesOfOrderConstants;
 
@@ -22,7 +24,12 @@ public class OrderModel {
     
     private String startPoint;
     private String endPoint;
-    private int priceOrder;
+    private BigDecimal priceOrder;
+    private LocalDateTime timeWhenCreatedOrder;
+    
+    private int orderWidth;
+    private int orderHeight;
+    private int orderLength;
 
     @Enumerated(EnumType.STRING)
     private SizesOfOrderConstants sizesOfOrder;
