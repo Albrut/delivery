@@ -1,6 +1,5 @@
 package com.example.hackathonProject.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
@@ -15,7 +14,6 @@ public class MainPage {
     private final DaoUserModel daoUserModel;
     private final DaoDeliverModel daoDeliverModel;
 
-    @Autowired
     public MainPage(DaoAdminModel daoAdminModel, DaoUserModel daoUserModel, DaoDeliverModel daoDeliverModel) {
         this.daoAdminModel = daoAdminModel;
         this.daoUserModel = daoUserModel;
