@@ -25,7 +25,7 @@ public class RestAPIController {
         return entity;
     }
     @PreAuthorize("hasRole('ADMIN')")
-    @GetMapping("/")
+    @GetMapping("/login")
     public String getMethodName(@RequestParam String reqString) {
         return "got";
     }

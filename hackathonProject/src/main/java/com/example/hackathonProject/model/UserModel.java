@@ -1,9 +1,12 @@
 package com.example.hackathonProject.model;
 
+import java.util.List;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import lombok.Data;
 
 @Entity
@@ -16,5 +19,8 @@ public class UserModel {
     private  String username;
     private  String password;
     
+    @OneToMany(mappedBy = "user")
+    private List<OrderModel> orders;
+
 
 }
