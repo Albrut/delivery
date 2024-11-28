@@ -15,7 +15,7 @@ public class RegisterLoginController {
 
     @GetMapping("/")
     public String mainPage() {
-        return "";
+        return "AUEDADSDD";
     }
 
     @PostMapping("/register")
